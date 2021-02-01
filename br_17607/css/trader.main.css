@@ -254,14 +254,7 @@
       white-space: nowrap; }
       .digits__digit-spot-value {
         transform: scale(0.95);
-        display: inline-block;
-        font-size: 1.4rem;
-        color: var(--text-general);
-        font-weight: 700;
-        text-transform: none;
-        text-align: center;
-        line-height: 1.5;
-        color: var(--text-general); }
+        display: inline-block; }
       .digits__digit-spot-last {
         font-size: 1.4rem;
         color: var(--text-general);
@@ -854,12 +847,9 @@
   flex-wrap: wrap;
   z-index: 1; }
   .app-contents--is-mobile .top-widgets-portal .recent-trade-info {
-    font-weight: bold;
     min-width: 8rem;
-    font-size: 1.6rem;
     line-height: 2.4rem;
-    margin-left: 0.8rem;
-    color: var(--text-general); }
+    margin-left: 0.8rem; }
 
 .app-contents--is-mobile .cq-chart-title > .cq-menu-btn {
   padding: 0.4rem;
@@ -1516,13 +1506,6 @@
       width: 100%;
       margin: 8px;
       height: 40px; }
-      .positions-drawer__footer .dc-btn .dc-btn__text {
-        font-size: 1.4em;
-        font-weight: bold; }
-  .positions-drawer__title {
-    font-size: 1.4em;
-    font-weight: bold;
-    color: var(--text-prominent); }
   .positions-drawer__icon-main {
     margin-right: 0.8em; }
   .positions-drawer__icon-close {
@@ -1617,17 +1600,12 @@
       height: 3.2rem !important; }
   .positions-modal-card__purchase-label, .positions-modal-card__payout-label {
     text-transform: none;
-    font-size: 0.8rem;
-    font-weight: normal;
     white-space: nowrap;
-    max-width: 90px;
-    color: var(--text-general); }
+    max-width: 90px; }
   .positions-modal-card__purchase-value, .positions-modal-card__payout-value {
-    font-size: 1.2em;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-weight: bold;
     padding: 4px 0 8px; }
   .positions-modal-card__purchase-price, .positions-modal-card__payout-price {
     display: flex;
@@ -1644,8 +1622,6 @@
       fill: var(--brand-secondary); }
   .positions-modal-card__symbol {
     margin-left: 0.5rem;
-    font-size: 1em;
-    line-height: 1.5;
     /* iPhone SE screen height fixes due to UI space restrictions */ }
     @media only screen and (max-height: 480px) {
       .positions-modal-card__symbol {
@@ -1895,29 +1871,21 @@
   margin: 0 4px; }
 
 .contract-audit__label {
-  font-size: 1em;
   white-space: nowrap;
-  max-width: 90px;
-  color: var(--text-general); }
+  max-width: 90px; }
 
 .contract-audit__value-wrapper {
   display: flex;
   flex-direction: column; }
 
 .contract-audit__value, .contract-audit__value2 {
-  padding-top: 2px;
-  line-height: 1.5;
-  font-size: 1.2em;
-  font-weight: bold;
-  color: var(--text-prominent); }
+  padding-top: 2px; }
 
 .contract-audit__timestamp {
   align-self: center;
-  margin-left: auto;
-  text-align: right; }
+  margin-left: auto; }
   .contract-audit__timestamp-value {
-    display: block;
-    line-height: 1.2; }
+    display: block; }
 
 .contract-audit__empty {
   display: flex;
@@ -1933,11 +1901,6 @@
     text-align: center;
     color: var(--text-less-prominent);
     padding: 8px; }
-  .contract-audit__empty-message {
-    color: var(--text-less-prominent);
-    font-size: 1.2rem;
-    text-align: center;
-    line-height: 1.4; }
 
 .contract-audit__tabs-content {
   padding: 0.8rem 1.6rem;
@@ -2173,13 +2136,6 @@
     .contract-type-item:hover .contract-type-item__icon {
       display: block; }
   .contract-type-item__title {
-    font-size: 1.4rem;
-    color: var(--text-general);
-    font-weight: 400;
-    text-transform: none;
-    text-align: left;
-    line-height: 1.5;
-    color: var(--text-general);
     padding-left: 1.6rem; }
   .contract-type-item__icon {
     display: none;
@@ -2278,14 +2234,7 @@
     justify-content: center;
     width: 100%; }
   .contract-type-info__title {
-    font-size: 1.6rem;
-    color: var(--text-general);
-    font-weight: 700;
-    text-transform: none;
-    text-align: left;
-    line-height: 1.75;
     margin: auto;
-    color: var(--text-prominent);
     cursor: default; }
   .contract-type-info__nav {
     display: flex;
@@ -2341,14 +2290,8 @@
     margin-bottom: 0.8rem;
     color: var(--text-general); }
   .no-results-found__subtitle {
-    font-size: 1.2rem;
-    font-weight: normal;
-    font-style: normal;
-    line-height: 1.5;
     letter-spacing: normal;
-    text-align: center;
-    margin: 0;
-    color: var(--text-less-prominent); }
+    margin: 0; }
 
 /** @define .market-is-closed-overlay */
 .market-is-closed-overlay {
@@ -2533,13 +2476,6 @@
     @media (min-width: 320px) and (max-width: 767px) {
       .btn-purchase__icon_wrapper {
         margin-right: 0.5rem; } }
-  .btn-purchase__text {
-    font-size: 1.4rem;
-    color: var(--text-colored-background);
-    font-weight: 700;
-    text-transform: none;
-    text-align: left;
-    line-height: 1.5; }
   .btn-purchase__info {
     color: var(--text-colored-background);
     text-align: left;
@@ -2847,15 +2783,8 @@
     .range-slider__line--fill {
       background: var(--state-hover); }
   .range-slider__caption {
-    padding-top: 8px;
-    line-height: 1.5;
-    font-size: 1.4em;
     text-align: center;
-    /* postcss-bem-linter: ignore */ }
-    .range-slider__caption-title {
-      font-weight: bold; }
-    .range-slider__caption span {
-      color: var(--text-prominent); }
+    padding-top: 8px; }
 
 /** @define toggle-button */
 .toggle-button {
@@ -2879,37 +2808,6 @@
 .toggle-button-group {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(4.4em, 1fr)); }
-
-/** @define native-select */
-.native-select__wrapper {
-  position: relative; }
-  .native-select__wrapper:after {
-    content: '\25bc';
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 8px;
-    font-size: 12px;
-    transform: translateY(-50%); }
-
-.native-select__select {
-  width: 100%;
-  height: 32px;
-  margin: 8px 0;
-  display: block;
-  font-weight: 300;
-  align-self: center;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  box-sizing: border-box;
-  background: var(--general-main-1); }
-  .native-select__select:hover {
-    border-color: var(--general-hover); }
-  .native-select__select:active, .native-select__select:focus {
-    outline: 0;
-    border-color: var(--general-active);
-    box-shadow: 0 0 0 2px var(--shadow-menu); }
 
 .info-box-container {
   position: absolute;
@@ -2939,13 +2837,6 @@
           .info-box-container .info-box-longcode-icon {
             margin-right: 0.8rem; } }
       .info-box-container .info-box-longcode-text {
-        font-size: 1.4rem;
-        color: var(--text-general);
-        font-weight: 400;
-        text-transform: unset;
-        text-align: left;
-        line-height: 1.5;
-        color: var(--text-general);
         max-width: 360px; }
         @media (min-width: 320px) and (max-width: 767px) {
           .info-box-container .info-box-longcode-text {
@@ -3112,9 +3003,6 @@
     height: 4.8em;
     width: 4.8em;
     margin-bottom: 1.6em; }
-  .portfolio-empty__text {
-    font-size: 1.4em;
-    color: var(--text-disabled); }
 
 /** @define portfolio-card */
 .portfolio-card {
@@ -3256,10 +3144,6 @@
     /* postcss-bem-linter: ignore */ }
     .chart-spot-label__time-container svg g {
       stroke: var(--text-prominent); }
-
-.chart-spot-label__time {
-  color: var(--text-prominent);
-  font-size: 10px; }
 
 .chart-spot-label__time-icon {
   margin-right: 2px; }

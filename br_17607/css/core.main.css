@@ -383,10 +383,6 @@
   line-height: var(--text-lh);
   font-weight: var(--text-weight);
   text-align: var(--text-align); }
-  .dc-text--right {
-    text-align: right; }
-  .dc-text--center {
-    text-align: center; }
 
 /*------------------------------------*
  *  # Constants
@@ -8200,7 +8196,7 @@
     .dc-drawer {
       width: 100vw !important;
       height: calc(100% - 10.1rem) !important;
-      top: calc(100% - 10.2rem) !important; } }
+      top: calc(100% - 9.8rem) !important; } }
   .dc-drawer__container {
     display: flex;
     flex-direction: column;
@@ -8265,7 +8261,7 @@
         transform: rotate(180deg); } }
   @media (min-width: 320px) and (max-width: 767px) {
     .dc-drawer--open {
-      transform: translateY(calc(-100% + 4rem)); } }
+      transform: translateY(calc(-100% + 3.6rem)); } }
 
 /*------------------------------------*
  *  # Constants
@@ -8482,6 +8478,12 @@
       width: 100%;
       height: 100%;
       pointer-events: none; }
+  .dc-dropdown__display--has-suffix-icon {
+    width: 21rem;
+    padding-left: 3rem;
+    justify-content: start; }
+    .dc-dropdown__display--has-suffix-icon-text {
+      padding-right: 0 !important; }
   .dc-dropdown__display--is-left-text {
     justify-content: flex-start; }
     .dc-dropdown__display--is-left-text .dc-dropdown__display-text {
@@ -8639,23 +8641,6 @@
   margin-top: 0.8rem;
   min-width: 15rem;
   width: 100%; }
-  .dc-dropdown-container .dc-native-select {
-    position: absolute;
-    top: 0;
-    opacity: 0; }
-    @supports not (-webkit-touch-callout: none) {
-      .dc-dropdown-container .dc-native-select {
-        /* non-iOS devices hack
-    * because .focus() doesn't open <select /> in Android OS,
-    * here we make the <select /> element to fit the dropdown container
-    * so user clicks on the <select /> element itself
-    * [TODO]: find alternative solution to trigger open <select /> with JS
-    */
-        width: 100%;
-        height: 100%; }
-        .dc-dropdown-container .dc-native-select__select {
-          width: 100%;
-          height: 100%; } }
 
 .dc-dropdown--has-placeholder .dc-dropdown__display {
   height: 4rem; }
@@ -8667,6 +8652,17 @@
 .dc-dropdown--has-placeholder .dc-dropdown__select-arrow {
   top: 12px;
   right: 16px; }
+
+.dc-dropdown--has-suffix-icon {
+  margin-left: 1rem;
+  margin-top: 0;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content; }
+
+.suffix-icon {
+  position: absolute;
+  left: 20px; }
 
 /*------------------------------------*
  *  # Constants
@@ -8778,6 +8774,8 @@
   border-radius: 4px;
   box-shadow: 0 8px 16px 0 var(--shadow-menu);
   background: var(--general-main-2); }
+  .dc-list--has-suffix-icon {
+    width: 21rem; }
   .dc-list--left {
     width: unset; }
     .dc-list--left .dc-list__item-text,
@@ -13179,10 +13177,15 @@
 .dc-select-native {
   width: 100%;
   position: relative; }
+  .dc-select-native--hide-selected-value {
+    margin-left: 10px;
+    width: 40px; }
   .dc-select-native__wrapper {
     height: 38px; }
     .dc-select-native__wrapper .dc-input {
       margin-bottom: 0px; }
+    .dc-select-native__wrapper--hide-selected-value {
+      width: 40px; }
   .dc-select-native__arrow {
     position: absolute;
     right: 1.2rem;
@@ -13246,6 +13249,9 @@
     color: var(--brand-red-coral); }
   .dc-select-native__hint {
     margin-left: 1.2rem; }
+  .dc-select-native__suffix-icon {
+    position: absolute;
+    left: 11px; }
 
 /*------------------------------------*
  *  # Constants
